@@ -1,0 +1,26 @@
+
+.a-style{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* 
+a:link #a-black {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited #a-db{
+    color: darkblue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover #a-blue{
+    color: darkblue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+   */
