@@ -85,9 +85,9 @@
                     <p>This is the equivalent of more than 10,000 football pitches - some 28 football pitches per day -
                         and over a third of the total area of the Autonomous City of Buenos Aires.</p>
 
-                    <p>The data comes from an analysis of satellite imagery from June 2021 and June 2022 processed by an
-                        algorithm to help identify changes in land use across a protected area of almost 35,000 km2,
-                        where deforestation is forbidden.</p>
+                    <p>The data comes from an analysis of satellite images of June 2021 and June 2022 processed by an
+                        algorithm that helped identify land-use changes in a protected area of almost 35,000 km2, where
+                        deforestation is forbidden.</p>
 
                     <figure class="image">
 
@@ -102,7 +102,7 @@
                     <h3>Mapping the lost forests</h3>
 
                     <p>The following interactive map shows in detail the changes over the last twelve months. The
-                        methodology and code used are available here.</p>
+                        methodology and code used are available <a href="#methodology">here</a>.</p>
 
                     <p>On the left side the region is shown as photographed by ESA's Sentinel-2 mission throughout May
                         and June 2021. On the right, the images are from June 2022 and the new 113 deforested patches
@@ -144,7 +144,7 @@
 
                     <p>According to the 2020 State of the Environment Report published by the Ministry of Environment
                         and Sustainable Development, between 1998 and 2020, Argentina lost 6.9 of its 54.3 million
-                        hectares of native forests, 13% of the total.</a>.</p>
+                        hectares of native forests, 13% of the total.</p>
 
                     <p>In 2007, to monitor this loss, the Forestry Law was passed, establishing three categories of
                         native forests:</p>
@@ -153,15 +153,15 @@
                         <li>Category I (red): very high conservation value. They cannot be exploited.
                         </li>
                         <li>Category II (yellow): medium conservation value. They cannot be cleared and can only be used
-                            sustainably, for tourism, harvesting or scientific research.</li>
+                            sustainably, for tourism, gathering or scientific research.</li>
                         <li>Category III (green): can be partially or totally transformed.</li>
                     </ul>
 
                     <p>Local classification was entrusted to each of the 23 provincial governments, together with the
                         obligation to update this territorial register every five years.</p>
 
-                    <p>In practice, very few provinces complied: only in 2016 did they all complete the initial
-                        categorisation and by 2020 only five had complied with the first update.</p>
+                    <p>In practice, very few provinces complied: only in 2016 all completed the initial categorisation
+                        and by 2020 only five had complied with the first mandatory update.</p>
 
 
                     <figure class="image">
@@ -173,7 +173,8 @@
                     <p>Although the new law slowed down the destruction, it could not prevent it completely. Especially
                         in the north, in the provinces of Chaco, Salta, Formosa and Santiago del Estero, where the main
                         cause of deforestation is the expansion of the so-called "agricultural frontier".</p>
-                    <p>From 2008 onwards, 85% of forest loss occurred in these provinces, in the Gran Chaco forest. It
+                    <p>From 2008 onwards, 85% of the country's forest loss occurred in these provinces, in the Gran
+                        Chaco forest. It
                         is the second largest forest in Latin America after the Amazon, covering part of Argentina,
                         Paraguay, Bolivia and Brazil for some 650,000 km2.</p>
 
@@ -201,18 +202,16 @@
                     <h3>Yellow... but almost red
                     </h3>
 
-                    <p>The algorithm didn't detect any forest loss in category I (red) areas between June 2021 and June 2022,
+                    <p>The algorithm didn't detect any forest loss in category I (red) areas between June 2021 and June
+                        2022,
                         but some deforestations occurred in category II (yellow) areas very close to the red
                         boundary.</p>
 
                     <figure class="image">
                         <img src="../assets/img/chaco-red-yellow.png" />
-                        <figcaption>Above: screenshots from <a
-                                href="https://english.news.cn/20220805/5142dddda03b4d3a898e9fe69b62b2c3/c.html"
-                                target="_blank">a video</a> published by Xinhua news agency | Below: Frigate
-                            Yiyang (548), <a href="https://commons.wikimedia.org/wiki/File:CNS_Yiyang_(FFG-548)_3.jpg"
-                                target="_blank">Japanese Ministry of Defencea</a> // Composite image by Federico Acosta
-                            Rainis
+                        <figcaption>Although category I areas (National Parks, Provincial Reserves, rivers) were not
+                            deforested, there was forest loss in some areas surrounding these important biodiversity
+                            sites<br>Map created by Federico Acosta Rainis / Basemap tiles by Esri
                         </figcaption>
                     </figure>
 
@@ -228,19 +227,28 @@
                         </video>
                     </div>
                     <figcaption>Deforestation of circa 170 ha, conducted between May 2021 and January 2022 along the
-                        Bermejito River, despite forest clearance being totally prohibited along its banks // Video created by Federico Acosta Rainis using SentinelHub
+                        Bermejito River, despite forest clearance being totally prohibited along its banks // Video
+                        created by Federico Acosta Rainis using SentinelHub
                     </figcaption>
 
                     <h3>How does the algorithm work to detect deforestation?
                     </h3>
 
-                    <p>To identify deforestation, I used a machine learning algorithm called Random Forest (RF) to perform what is called a supervised classification. The name of the algorithm has nothing to do with its usefulness for detecting forests: it is named after the way it processes data, building "decision trees".</p>
+                    <p>To identify deforestation, I used a machine learning algorithm called Random Forest (RF) to
+                        perform what is called a supervised classification. The name of the algorithm has nothing to do
+                        with its usefulness for detecting forests: it is named after the way it processes data, building
+                        "decision trees".</p>
 
-                    <p>First I manually categorised different land uses (water, crops, forest, low vegetation and deforestation) at many points in a satellite image. I then fed this information to the algorithm, so that it could learn to distinguish the categories on its own and replicate the classification for the entire northern Chaco. </p>
+                    <p>First I manually categorised different land uses (water, crops, forest, low vegetation and
+                        deforestation) at many points in a satellite image. I then fed this information to the
+                        algorithm, so that it could learn to distinguish the categories on its own and replicate the
+                        classification for the entire northern Chaco. </p>
 
-                    <p>For more information, scope and limitations and access to the source code, see Methodology.</p>
+                    <p>For more information, scope and limitations and access to the source code, see <a
+                            href="#methodology">Methodology</a>.</p>
 
-                    <p>The following figure compares the original satellite images and the classification performed by the algorithm in both periods to show how it works.</p>
+                    <p>The following figure compares the original satellite images and the classification performed by
+                        the algorithm in both periods to show how it works.</p>
 
                     <figure class="image">
                         <div class="flourish-embed flourish-photo-slider" data-src="visualisation/11032489">
@@ -262,13 +270,86 @@
 
                 <h4>CREDITS</h4>
 
-                <p>Cover video: Deforestation in northern Chaco // Video created by Federico Acosta Rainis using SentinelHub</p>
+                <p>Cover video: Deforestation in northern Chaco // Video created by Federico Acosta Rainis using <a
+                        href="https://www.sentinel-hub.com/explore/eobrowser/" target="_blank">SentinelHub</a></p>
 
-                <h4>METHODOLOGY</h4>
+                <h4>SOURCES</h4>
 
+                <p>The region of interest (ROI) delimits the category I and II protected forests in Chaco to the north
+                    of the parallel 26°07'30.8 "S. Although there are also protected areas to the south of this
+                    parallel, this ROI was chosen because it concentrates the vast majority of forests in the province.
+                </p>
+                <p>As there is no open data available on category II forest areas, the perimeter was manually plotted in
+                    QGIS following the classification of <a href="https://www.crea.org.ar/mapalegal/otbn/chaco"
+                        target="_blank">this</a> site. It is available <a
+                        href="https://code.earthengine.google.com/?asset=projects/ee-facostarainis/assets/roi-chaco"
+                        target="_blank">here</a>. The layer of forests
+                    classified as category I within the ROI was obtained <a
+                        href="https://drive.google.com/drive/folders/1bqVKq367NJl-yRa0O_oxFrgaPlSNOC_8"
+                        target="_blank">here</a>, published by the <a
+                        href="http://rnaturaleschaco.gob.ar/category/bosques/" target="_blank">Subsecretaría de
+                        Recursos Naturales de la Provincia del Chaco</a>.</p>
 
-                
+                <h4 id="methodology">METHODOLOGY</h4>
 
+                <p><strong>Satellite imagery</strong></p>
+                <p>To build the satellite map mosaics of the region I used Sentinel-2 images in L2A (atmospherically
+                    corrected) mode.</p>
+                <p>I made the selection, image processing and model construction using <a
+                        href="https://earthengine.google.com/" target="_blank">Google
+                        Earth Engine (GEE)</a>. I used bands B2, B3, B4, B8, B11 and B12.</p>
+                <p>For the year 2021, I used imagery from 25 May to 30 June; for the year 2022, from 1 to 30 June. In
+                    both cases I set a maximum of 2% cloud coverage. I chose images from the same month in different
+                    years to limit the impact of crop seasonality.</p>
+                <p><strong>Model creation and deforestation detection</strong></p>
+                <p>For 2021 I created 612 datapoints and the code I used, based on <a
+                        href="https://www.youtube.com/watch?v=N_yJDMgRfik" target="_blank">this tutorial</a>, is
+                    available <a href="https://code.earthengine.google.com/4b07f7bb5a60d730bf17b3fca9fc0f94"
+                        target="_blank">here</a>; the
+                    average accuracy (running the model 10 times) was 68.6%. For 2022 I created 597 datapoints and the
+                    code is available <a href="https://code.earthengine.google.com/6edeec81980558a659b057fe3d5129c2"
+                        target="_blank">here</a>; the average accuracy (running the model 10 times) was 74.8%. Most of
+                    the
+                    data points are the same for both years because the land use did not change much.</p>
+                <p>Next, I mitigated the <a href="https://en.wikipedia.org/wiki/Salt-and-pepper_noise"
+                        target="_blank">salt and pepper noise</a>, and exported the resulting classified land images of
+                    the
+                    ROI for 2021 and 2022. I imported
+                    them into QGIS, divided them into grids, and manually compared the changes to detect possible
+                    deforestation. I used the criteria of change from dark green ("Forest") or light green ("Low
+                    vegetation") to red ("Deforestation") as a sign of possible deforestation.</p>
+                <p>I manually delimited each of the nearly 130 detected patches and compared them with the original
+                    satellite images to eliminate false positives.</p>
+                <p><strong>Possible model improvements</strong></p>
+                <p>Several things can be tried to improve the model, which I was not able to test this time.</p>
+                <ul>
+                    <li>The category "Deforestation" does not mean that the land has been recently deforested but that
+                        there is no more forest or low vegetation in that sector; in most cases these are
+                        harvested fields; since what is relevant is to detect forest loss, it might be useful to merge
+                        it with the under-represented category "Crops"
+                    </li>
+                    <li>Data points created in the "Urban" category were left out, as the models performed better
+                        without them, probably because cities occupy a very small part of the area analysed. They could
+                        be incorporated if the model is improved.</li>
+                    <li>Test different band configurations</li>
+                    <li>Test different parameters for the Random Forest model or use other models. The CART model gave
+                        on average 10% lower accuracy</li>
+                    <li>Automate the detection of changes from "Forest" or "Low vegetation" to "Deforestation"</li>
+                </ul>
+                <p><strong>Interactive map (webapp)</strong></p>
+                <p>The <a href="https://facostarainis.users.earthengine.app/view/chaco-deforestation-2021-2022"
+                        target="_blank">interactive map</a> was created in GEE following <a
+                        href="https://www.youtube.com/watch?v=C63lbekwLWc" target="_blank">this</a> tutorial and the
+                    commented code is available
+                    <a href="https://code.earthengine.google.com/5cc9353bade03fd84a21a9dae97c2d3e"
+                        target="_blank">here</a>.
+                </p>
+                <p>As a lot of satellite images are used, the app may take a while to load some of the layers each time
+                    you zoom in.</p>
+                <p>For any other questions, you can reach me on <a href="https://twitter.com/facostarainis"
+                        target="_blank">Twitter</a>.</p>
+                <p></p>
+                <p></p>
             </div>
         </footer>
 

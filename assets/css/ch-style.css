@@ -71,7 +71,7 @@
     padding-top: 5px;
   }
   
-  footer p{
+  footer p, footer li{
     font-size: 1rem;
     line-height: 1.5rem;
     margin-top: 5px;
