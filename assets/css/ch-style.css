@@ -250,6 +250,9 @@
       padding: 0;
     }
   
+    #hero-video {
+      padding: 0;
+    }
 
     .hero-image img {
       padding: 0;
@@ -275,7 +278,7 @@
       justify-content: flex-end;
       margin-top: 50px;
       padding-bottom: 20px;
-      z-index: 1;
+  
     }
 
     h1 {
