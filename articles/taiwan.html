@@ -22,6 +22,11 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link
@@ -33,7 +38,7 @@
 
 
 <body>
-    
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
@@ -426,22 +431,26 @@
                 <h4>METHODOLOGY</h4>
 
 
-                <p>I used Sentinel-1 imagery from 24/07/22 and 05/08/22, downloaded using <a href="https://fromgistors.blogspot.com/p/semi-automatic-classification-plugin.html"
-                    target="_blank">SCP</a> for QGIS.</p>
+                <p>I used Sentinel-1 imagery from 24/07/22 and 05/08/22, downloaded using <a
+                        href="https://fromgistors.blogspot.com/p/semi-automatic-classification-plugin.html"
+                        target="_blank">SCP</a> for QGIS.</p>
 
                 <p>I processed the imagery using SNAP 9.0. First I applied the Orbit File and ran the Ocean Object
                     Detection algorithm, using the <a href="https://www.marineregions.org/sources.php"
-                    target="_blank">IHO Sea Areas dataset</a> to mask the sea, and with the default parameters, except for
+                        target="_blank">IHO Sea Areas dataset</a> to mask the sea, and with the default parameters,
+                    except for
                     the Target Window Size (m) of the AdaptiveThresholding, which I set to 30 (to detect ships of 30
                     metres or more).</p>
 
                 <p>To clean the data I removed all the offshore windmills that the algorithm had detected as false
-                    positives (+500), by manual inspection and by using to <a href="https://map.4coffshore.com/offshorewind/"
-                    target="_blank">4C Offshore map</a>. I also removed all ships detected
+                    positives (+500), by manual inspection and by using to <a
+                        href="https://map.4coffshore.com/offshorewind/" target="_blank">4C Offshore map</a>. I also
+                    removed all ships detected
                     with duplicate coordinates.</p>
 
-                <p>The final database of detected ships is available <a href="https://docs.google.com/spreadsheets/d/1mAW6iStp-gn5K54aNcruokjjw3P_-VYxHnVKw5WXHxs/edit?usp=sharing"
-                    target="_blank">here</a>. CRS is WGS84.</p>
+                <p>The final database of detected ships is available <a
+                        href="https://docs.google.com/spreadsheets/d/1mAW6iStp-gn5K54aNcruokjjw3P_-VYxHnVKw5WXHxs/edit?usp=sharing"
+                        target="_blank">here</a>. CRS is WGS84.</p>
 
                 <p>To calculate the surface area of the ships I multiplied the width by the length, as detected by SNAP.
                     Sentinel-1 has a resolution of 10m per pixel, so there may be measurement and/or positional errors
@@ -450,10 +459,11 @@
                 <p>I processed the geographic information with QGIS. The tiles for the base map are © CARTO. The
                     territorial data for internal and territorial waters of China and Taiwan are from the Flanders
                     Marine Institute (2019) and are available at <a href="https://www.marineregions.org/"
-                    target="_blank">Marineregions.org</a>. Coordinates of military exercise
-                    areas were published by <a href="https://english.news.cn/20220802/913b020aaabf4e449223b6c88b956d25/c.html"
-                    target="_blank">Xinhua</a>.</p>
-                    
+                        target="_blank">Marineregions.org</a>. Coordinates of military exercise
+                    areas were published by <a
+                        href="https://english.news.cn/20220802/913b020aaabf4e449223b6c88b956d25/c.html"
+                        target="_blank">Xinhua</a>.</p>
+
 
                 <p>Although I did not use them for the final piece, I also processed images from the 12/07/22 Sentinel-1
                     overflight of Taiwan. The number of total ships, large ships, and ships detected in international
@@ -464,6 +474,35 @@
         </footer>
 
     </main>
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/facostarainis"
+                    target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.linkedin.com/in/federico-acosta-rainis/" target="_blank" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/facostarainis/"
+                    target="_blank" role="button"><i class="fab fa-github"></i></a>
+            </section>
+        </div>
+
+        <!-- Me -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            More about me:
+            <a class="text-white" href="https://facostarainis.github.io" target="_blank">facostarainis.github.io</a>
+        </div>
+        <!-- Me -->
+    </footer>
 
     <script src="https://unpkg.com/intersection-observer"></script>
     <script src="https://unpkg.com/scrollama"></script>
