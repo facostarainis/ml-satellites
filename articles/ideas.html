@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to tell using AI and satellite imagery</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/ml-logo.png" alt="logo." width="30" height="24"
+                    class="d-inline-block align-text-top">
+                ML Satellites
+            </a>
+        </div>
+    </nav>
+    <br>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1 class="section-heading">
+                            What to tell using AI and satellite imagery? Here there are some ideas
+                        </h1>
+                        <span class="meta">
+                            <p>By <em>Federico Acosta Rainis</em> - 8 September 2022</p>
+                        </span>
+                    </div>
+                    <!-- <div>
+                        <figure class="figure">
+                            <img src="../assets/img/logowide.png" class="img-fluid"
+                                alt="The Parana River reaching the Rio de La Plata, Argentina, 2022">
+                            <figcaption class="figure-caption">False colour image of the Paraná River near its mouth at
+                                the Rio de La Plata, Argentina
+                                <br>Image: Copernicus Sentinel data [2022] processed by Sentinel Hub
+                            </figcaption>
+                        </figure>
+                    </div> -->
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3"></div>
+
+            <div class="col-lg-6 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                <p>
+                    What stories can be told with a combination of <b>satellite imagery and AI</b>? In this second part
+                    of this
+                    two-part article, you will find some story ideas to put into practice.
+                </p>
+                <p>
+                    <a href="how-to-get-started.html">
+                        [If you'd prefer some tips to get you started instead, click here to read part one]
+                    </a>
+                </p>
+                <p>
+                    Many of these stories can be told using satellite data alone, without using AI;
+                    <mark>the main advantage of algorithms is quantifying phenomena, identifying patterns, showing
+                        changes or finding a "needle in a haystack" across large territories or different time periods.
+                        Or to automate a process:</mark>
+                    since satellites produce recurring data, you can build, for example, a
+                    platform that automatically detects changes in the size of forests.
+                </p>
+                <p>
+                    I adopt here the framework developed by <b>Paul Bradshaw</b> for <b>data journalism</b>, which
+                    recognises <b>eight types
+                        of stories</b>: scale, change, ranking, variation, exploration, exploration, relationships,
+                    stories
+                    about data and stories through data.
+                </p>
+                <p>
+                    Some of the stories I propose follow existing examples; others are paths not yet travelled that are
+                    worth exploring. The underlying idea, in any case, is that they will serve as inspiration for
+                    journalists interested in exploring these techniques further.
+                </p>
+
+                <section>
+                    <h4>Scale stories</h4>
+                    <p>
+                        These are stories that allow us to quantify a phenomenon, either to provide context or to
+                        understand
+                        the scale of a problem. Satellite information is especially useful where there is no official
+                        data,
+                        which is common in the global south, or when dealing with illegal activities.
+                    </p>
+                    <ul>
+                        <li>
+                            Count the number of boats <a
+                                href="https://globalfishingwatch.org/research-project-dark-vessels/" target="_blank"
+                                rel="noopener noreferrer">fishing illegally</a> in a country's territorial waters
+                        </li>
+                        <li>
+                            Finding out the number of <a
+                                href="https://texty.org.ua/projects/105463/unveiled-threat-russian-military-bases-satellite-monitoring/"
+                                target="_blank" rel="noopener noreferrer">
+                                units deployed</a> in a war
+                        </li>
+                        <li>
+                            Knowing how many animals are left of an <a
+                                href="https://zslpublications.onlinelibrary.wiley.com/doi/full/10.1002/rse2.195"
+                                target="_blank" rel="noopener noreferrer">
+                                endangered species</a>
+                        </li>
+                    </ul>
+
+                    <h4>Change stories</h4>
+                    <p>
+                        These involve a time dimension and tell how something has (or has not) changed. Decades-old
+                        satellite data, such as from the Landsat programme, are very powerful for looking at the
+                        consequences of climate change. Some current providers, such as Planet, produce daily images of
+                        the
+                        same location, allowing even very small changes to be monitored.
+                    </p>
+                    <ul>
+                        <li>
+                            Check whether a <a
+                                href="https://developers.arcgis.com/python/samples/automatic-road-extraction-using-deep-learning/"
+                                target="_blank" rel="noopener noreferrer">
+                                road construction</a> (or some other publicly funded project) is running on schedule
+                        </li>
+                        <li>
+                            Measure how the size of <a
+                                href="https://www.researchgate.net/publication/332371283_Glacier_Facies_Mapping_Using_a_Machine-Learning_Algorithm_The_Parlung_Zangbo_Basin_Case_Study"
+                                target="_blank" rel="noopener noreferrer">
+                                glaciers</a> in a region has changed
+                        </li>
+                        <li>
+                            Map how <a href="https://dida.do/blog/monitoring-urban-development-from-space"
+                                target="_blank" rel="noopener noreferrer">
+                                urbanisation</a> has grown over the last few decades
+                        </li>
+                    </ul>
+
+
+                    <h4>Ranking stories</h4>
+                    <p>
+                        These are stories that establish an order, revealing which is the best, worst or "different" in
+                        a
+                        series. Algorithms and computational power on satellite imagery make it possible to compare very
+                        large territories, even entire countries. Using the same dataset (the same satellite) provides
+                        an
+                        extra advantage and overcomes the problems that arise when comparing data collected in different
+                        jurisdictions, which are not always standardised.
+                    </p>
+                    <ul>
+                        <li>
+                            Find out which countries have <a
+                                href="https://project-archive.inf.ed.ac.uk/ug4/20212136/ug4_proj.pdf" target="_blank"
+                                rel="noopener noreferrer">
+                                reforested</a> the most in the last year
+                        </li>
+                        <li>
+                            Find out which neighbourhood has the most <a
+                                href="https://developers.arcgis.com/python/samples/detecting-swimming-pools-using-satellite-image-and-deep-learning/"
+                                target="_blank" rel="noopener noreferrer">
+                                swimming pools</a> (and therefore consumes the most water)
+                        </li>
+                        <li>
+                            Find out which municipalities have the most <a
+                                href="https://www.euspaceimaging.com/combining-vhr-satellite-imagery-and-deep-learning-to-detect-landfills/"
+                                target="_blank" rel="noopener noreferrer">
+                                open dumps</a>
+                        </li>
+                    </ul>
+
+
+                    <h4>Variation stories</h4>
+                    <p>
+                        Show differences in phenomena where, a priori, there should not be any, evidencing inequality.
+                        As
+                        with ranking histories, always using the same dataset of satellite images allows different areas
+                        to
+                        be compared using a single criterion.
+                    </p>
+                    <ul>
+                        <li>
+                            Compare <a
+                                href="https://www.researchgate.net/publication/348112867_Machine_learning_method_for_quick_identification_of_water_quality_index_WQI_based_on_Sentinel-2_MSI_data_Ebinur_Lake_case_study"
+                                target="_blank" rel="noopener noreferrer">
+                                water quality</a> in different lakes or rivers
+                        </li>
+                        <li>
+                            Compare access to <a
+                                href="https://www.sciencedirect.com/science/article/pii/S0924271619300383"
+                                target="_blank" rel="noopener noreferrer">
+                                quality housing</a> in the main cities of a country
+                        </li>
+                        <li>
+                            Compare the amount of <a
+                                href="https://www.researchgate.net/publication/350899821_Rapid_identification_of_urban_green_space_using_Planetscope_satellite_image_and_artificial_intelligence"
+                                target="_blank" rel="noopener noreferrer">
+                                green space</a> per capita in different neighbourhoods
+                        </li>
+                    </ul>
+
+
+                    <h4>Exploration stories</h4>
+                    <p>
+                        These are stories that encourage the user to get involved in the exploration of a phenomenon,
+                        with
+                        or without interactivity. Satellite imagery can be used to build large maps where each reader
+                        can
+                        explore what is happening near their home.
+                    </p>
+                    <ul>
+                        <li>
+                            Mapping <a href="https://www.pnas.org/doi/10.1073/pnas.2025400118" target="_blank"
+                                rel="noopener noreferrer">
+                                areas destroyed</a> in a war
+                        </li>
+                        <li>
+                            Showing the location of <a
+                                href="https://iopscience.iop.org/article/10.1088/1748-9326/abbd01" target="_blank"
+                                rel="noopener noreferrer">
+                                plastic islands</a> in the oceans
+                        </li>
+                        <li>
+                            Identifying the location of all the <a
+                                href="https://pdfs.semanticscholar.org/0cfc/88ecfe8db1433404eea6aa9ff74667ff6587.pdf?_ga=2.57417514.1237260333.1662316060-572335042.1662316060"
+                                target="_blank" rel="noopener noreferrer">
+                                football stadiums</a> in a country
+                        </li>
+                    </ul>
+
+
+                    <h4>Relationship stories</h4>
+                    <p>
+                        These pieces explore or analyse the relationship (or lack of relationship) between two different
+                        phenomena, with Bradshaw's key caveat: correlation never implies causation. Satellite imagery
+                        can be
+                        used to account for the two phenomena being compared; or for one of them and use other
+                        information
+                        (official data already available, for example) to account for the other.
+                    </p>
+                    <ul>
+                        <li>
+                            Explore the relationship between increased deforestation and
+                            <a href="https://www.researchgate.net/publication/359660066_Flood_Detection_in_Urban_Areas_Using_Satellite_Imagery_and_Machine_Learning"
+                                target="_blank" rel="noopener noreferrer">
+                                increased flooding</a>
+                        </li>
+                        <li>
+                            Exploring the relationship between the size of a city's green spaces and its
+                            <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JD031380"
+                                target="_blank" rel="noopener noreferrer">
+                                air quality</a>
+                        </li>
+                    </ul>
+
+
+                    <h4>Stories about data</h4>
+                    <p>
+                        These are stories about the data itself: whether it is missing, inaccurate or flawed. Satellite
+                        imagery can be used to verify or question the quality of official datasets; missing or censored
+                        imagery is also saying something.
+                    </p>
+                    <ul>
+                        <li>
+                            Detect the number of <a
+                                href="https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/neurips2020/32/paper.pdf "
+                                target="_blank" rel="noopener noreferrer">
+                                oil wells</a> in a given area to verify whether official data is correct
+                        </li>
+                        <li>
+                            Mapping <a href="https://www.bbc.co.uk/news/57102499" target="_blank"
+                                rel="noopener noreferrer">
+                                censored areas</a> in commercial providers such as Google or Bings
+                        </li>
+                        <li>
+                            Uncovering <a
+                                href="https://www.buzzfeednews.com/article/alison_killing/satellite-images-investigation-xinjiang-detention-camps"
+                                target="_blank" rel="noopener noreferrer">
+                                secret facilities</a> due to missing imagery
+                        </li>
+                    </ul>
+
+
+                    <h4>Stories through data</h4>
+                    <p>
+                        In these stories, data is the means to unveil or discover something. Particularly useful here is
+                        the
+                        use of AI to find patterns, infrastructure or objects in a large amount of satellite imagery.
+                    </p>
+                    <ul>
+                        <li>
+                            Finding <a href="https://www.ijcrt.org/papers/IJCRT2206032.pdf" target="_blank"
+                                rel="noopener noreferrer">
+                                unregistered airstrips</a> in areas where illegal groups operate
+                        </li>
+                        <li>
+                            Discovering <a
+                                href="https://www.sciencedirect.com/science/article/abs/pii/S0025326X22003484"
+                                target="_blank" rel="noopener noreferrer">
+                                oil spills</a> left behind by ships in the seas and oceans
+                        </li>
+                        <li>
+                            Detect <a href="https://facostarainis.github.io/ml-satellites/articles/taiwan.html"
+                                target="_blank" rel="noopener noreferrer">
+                                military vessels</a> in conflict scenarios
+                        </li>
+                    </ul>
+
+                </section>
+            </div>
+
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-center text-white one-padding-bottom">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/facostarainis"
+                    target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.linkedin.com/in/federico-acosta-rainis/" target="_blank" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/facostarainis/"
+                    target="_blank" role="button"><i class="fab fa-github"></i></a>
+
+                <!-- Portfolio -->
+                <p class="card-text" style="padding-top: 1%;"><small class="text-muted">
+                        Portfolio:
+                        <a class="text-white" href="https://facostarainis.github.io"
+                            target="_blank">facostarainis.github.io</a>
+                    </small></p>
+
+                <!-- Contact me -->
+                <p class="card-text"><small class="text-muted">
+                        Any questions or comments? I would love to hear from you! Feel free to contact me on Twitter
+                    </small></p>
+
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>

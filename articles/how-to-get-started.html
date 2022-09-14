@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to get started</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/ml-logo.png" alt="logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                ML Satellites
+            </a>
+        </div>
+    </nav>
+    <br>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1 class="section-heading">
+                            Journalism, AI and satellite imagery: how to get started
+                        </h1>
+                        <span class="meta">
+                            <p>By <em>Federico Acosta Rainis</em> - 12 September 2022</p>
+                        </span>
+                    </div>
+                    <div>
+                        <figure class="figure">
+                            <img src="../assets/img/amazon2-sentinel-big.png" class="img-fluid"
+                                alt="Satellite image of the Amazon in Tocantins area, Brazil.">
+                            <figcaption class="figure-caption"> Satellite image of the Amazon. Tocantins, Brazil.
+                                Source: Copernicus Sentinel data [2022] processed by Sentinel Hub, using Highlight
+                                Optimized Natural Color.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3"></div>
+
+            <div class="col-lg-6 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                <p>
+                    The combination of satellite imagery and artificial intelligence (AI) is a powerful tool for data
+                    journalism investigations.
+                </p>
+                <p>
+                    But, what kind of stories can be told? How to get started?
+                </p>
+                <p>
+                    With the aim of paving the way for journalists who want to use satellite imagery and AI in their
+                    work, in this two-part article I share what I learned after talking to experts and doing my own
+                    experiments.
+                </p>
+                <p>
+                    In this first part, you'll find suggestions on how to get started and avoid the most common
+                    pitfalls. If you are looking for story ideas, visit the second part by clicking
+                    <a href="ideas.html">here</a>.
+                </p>
+
+
+                <h4>Before you start</h4>
+                <p>
+                    Working with satellite imagery and AI models takes time and patience. There is no general rule: you
+                    have to find the right model for each case, in a process of trial and error, while crunching large
+                    amounts of data.
+                </p>
+                <p>
+                    That is why the advice of Anatoly Bondarenko, data editor of
+                    <a href="https://texty.org.ua/" target="_blank" rel="noopener noreferrer">
+                        Texty</a>, is crucial: "Find a task or story where you will not be sorry to put many resources
+                    in."
+                </p>
+                <p>
+                    The combination of satellite imagery and AI is useful for providing general context where no data
+                    exists, discovering patterns over large territories or over time, counting scattered objects or
+                    finding needles in a haystack.
+                </p>
+                <p>
+                    "AI makes sense when you want to do things at a larger scale or repeatedly. Either because you're
+                    working on such a big area that it's impractical to do it as a human or because you want to do it
+                    again and again over time," says Edward Boyda from Earthrise, who worked on the
+                    <a href="https://amazonminingwatch.org/" target="_blank" rel="noopener noreferrer">
+                        Amazon Mining Watch project</a>.
+                </p>
+                <p>
+                    Before you go any further, ask yourself: is this the best tool to tell the story?
+                </p>
+                <p>
+                    Perhaps there is an easier or more efficient way to get the information you are looking for. There
+                    may already be a dataset available, or you may be able to get it through a public information
+                    request. Or you may manually count objects in a satellite image, without the need for AI.
+                </p>
+
+
+                <h4>Know the territory and the basic tools</h4>
+                <p>
+                    If you decide to go ahead, the next step is to familiarise yourself with your region of interest
+                    (ROI) and the basic tools you will use.
+                </p>
+                <p>
+                    One of the advantages of satellite data is that it allows you to investigate from afar: you can
+                    observe any corner of the globe from your computer. But you should still familiarise with the ROI in
+                    order to interpret your findings correctly.
+                </p>
+                <p>
+                    If you can visit the site, so much the better; if not, gather as much information as you can about
+                    it. Find out what the problems or hot topics are, get non-satellite images, contact local people or
+                    experts that work there. This will help you to minimise errors during the analysis.
+                </p>
+                <p>
+                    Edward says that satellite imagery is useful for investigating areas where it is "hard for
+                    journalists to operate", but that it should always be used "in a combination with traditional on the
+                    ground reporting", as satellites are "useful for illustrating or quantifying, but don't bring that
+                    human story element in".
+                </p>
+                <p>
+                    As for the tools, take some time to experiment and choose the ones you are most comfortable with or
+                    can best adapt to your case. Start with the familiar: if you already know R or Python, for example,
+                    look for libraries such as
+                    <a href="https://cran.r-project.org/web/packages/RStoolbox/index.html" target="_blank"
+                        rel="noopener noreferrer">
+                        RSToolBox</a> or
+                    <a href="https://earthpy.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">
+                        Earthpy</a>.
+                </p>
+                <p>
+                    You don't always need to write code: there is free software with AI algorithms for classifying
+                    images or detecting objects. Two very useful ones are
+                    <a href="https://www.qgis.org/en/site/" target="_blank" rel="noopener noreferrer">
+                        QGIS</a> (with the
+                    <a href="https://fromgistors.blogspot.com/p/semi-automatic-classification-plugin.html"
+                        target="_blank" rel="noopener noreferrer">
+                        SCP</a> and
+                    <a href="https://github.com/nkarasiak/dzetsaka" target="_blank" rel="noopener noreferrer">
+                        dzetsaka</a> plugins) and
+                    <a href="https://step.esa.int/main/download/snap-download/" target="_blank"
+                        rel="noopener noreferrer">
+                        SNAP</a> (ideal for European Space Agency satellite data).
+                </p>
+                <p>
+                    For an initial analysis, you don't need anything too fancy:
+                </p>
+                <ol>
+                    <li>
+                        Use
+                        <a href="https://www.google.com/intl/en_uk/earth/versions/" target="_blank"
+                            rel="noopener noreferrer">
+                            Google Earth Pro</a> to quickly look at an ROI over time.
+                    </li>
+                    <li>
+                        If you need more information,
+                        <a href="https://apps.sentinel-hub.com/eo-browser/" target="_blank" rel="noopener noreferrer">
+                            Sentinel Hub's EO Browser</a> is good for a first analytical approach: you can use different
+                        satellites, test band combinations and filter cloud cover.
+                    </li>
+                    <li>
+                        If this is still not enough, then it's time to create your own framework by combining different
+                        tools.
+                    </li>
+                </ol>
+
+
+
+                <h4>Ask for help from others</h4>
+                <p>
+                    Most journalistic pieces that use AI and satellite imagery are collaborative projects and rely on a
+                    data expert.
+                </p>
+                <p>
+                    You can look for help in
+                    <a href="https://gis.stackexchange.com/" target="_blank" rel="noopener noreferrer">
+                        specialised forums</a> or contact
+                    <a href="https://aifromabove.notion.site/aifromabove/A-Journalist-s-Guide-to-using-AI-Satellite-Imagery-for-Storytelling-c32a310269124f069da96b73e872e574"
+                        target="_blank" rel="noopener noreferrer">
+                        other journalists</a>
+                    who have used such techniques. But also look beyond journalism: Earth Observation (EO) and remote
+                    sensing are used in many fields such as agriculture, ecology, biology and disaster management.
+                </p>
+                <p>
+                    If you seek advice from others before starting the technical work, you will avoid some of the dead
+                    ends that others have already gone down.
+                </p>
+                <p>
+                    It is not just about solving technical problems. An NGO working on environmental issues may be able
+                    to supply
+                    <a href="https://www.planet.com/nicfi/" target="_blank" rel="noopener noreferrer">
+                        high-resolution images</a>, give you hard-to-get information about your ROI or put you in touch
+                    with local experts.
+                </p>
+                <p>
+                    "This knowledge is not something that is intrinsic in the news industry, so news organisations need
+                    to go where they can find it, looking at civil society organisations or startups focused on using
+                    the satellite imagery," says Mathias Felipe de Lima Santos, project manager of data-driven projects
+                    at
+                    <a href="https://infoamazonia.org/" target="_blank" rel="noopener noreferrer">
+                        InfoAmazonia</a> and researcher in the Digital Media and Observatory at the Federal University
+                    of São Paulo (Unifesp). This way they will be able to "produce investigations that go beyond their
+                    own limits".
+                </p>
+
+
+                <h4>Start small and be organised</h4>
+                <p>
+                    Always start small. Even if your ultimate ROI is a much larger area, start by limiting your analysis
+                    to an area that is representative of the phenomenon you want to investigate, but as small as
+                    possible.
+                </p>
+                <p>
+                    Using AI on a single satellite image takes a fair amount of intellectual effort, computational power
+                    and processing time. As you add more images, the difficulty grows exponentially: the information to
+                    be processed increases and new problems arise, such as how to stitch the images together, work out
+                    the overlaps, and compare images from different dates.
+                </p>
+                <p>
+                    Do all the tests you need in a small area and only when you are satisfied with the results extend
+                    the model to your entire ROI.
+                </p>
+                <p>
+                    You may be using a lot of information from different sources. Satellite imagery in raw format often
+                    has complicated names, combinations of letters and numbers that reference the coordinates, date and
+                    type of processing used.
+                </p>
+                <p>
+                    It is good to be consistent: using a spreadsheet as a master file can help you to organise all this
+                    data. As when writing code, it is better to use extra-explicit nomenclature rather than generic
+                    names that will make it difficult to remember what they refer to.
+                </p>
+
+
+
+                <h4>Working with AI: models and computational power</h4>
+                <p>
+                    AI comes in different flavours but you will probably use one (or a combination) of the following
+                    tools:
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://rspatial.org/raster/rs/4-unsupclassification.html" target="_blank"
+                            rel="noopener noreferrer">
+                            Unsupervised classification
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://hakimabdi.com/blog/tutorial-machine-learning-classification-of-sentinel-2-satellite-imagery-using-r"
+                            target="_blank" rel="noopener noreferrer">
+                            Supervised classification
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://towardsdatascience.com/semantic-segmentation-of-aerial-imagery-using-u-net-in-python-552705238514?gi=2b722a802fd8"
+                            target="_blank" rel="noopener noreferrer">
+                            Semantic segmentation
+                        </a>
+                    </li>
+                </ul>
+                <p>
+                    If you plan to use a supervised model for object detection, find out if there are already image
+                    datasets available to train it. Creating datasets is a time-consuming task.
+                </p>
+                <p>
+                    Try different models - and different parameters - to see which one suits you best. Some of the best
+                    known are Random Forest, Supporting Vector Machine (SVM) and Nearest Neighbours. Multi-layered Deep
+                    Learning (DL) models tend to give better results, but are much more complex to build.
+                </p>
+                <p>
+                    If you have to process a lot of data, consider cloud computing. There are free tools such as
+                    <a href="https://research.google.com/colaboratory/" target="_blank" rel="noopener noreferrer">
+                        Google Colab</a> or
+                    <a href="https://code.earthengine.google.com/" target="_blank" rel="noopener noreferrer">
+                        Google Earth Engine</a> (GEE) that can crunch huge amounts of data and get results in a short
+                    time. GEE also provides easy access to datasets from Landsat, Sentinel, and
+                    <a href="https://developers.google.com/earth-engine/datasets/" target="_blank"
+                        rel="noopener noreferrer">
+                        MODIS missions</a>.
+                </p>
+                <p>
+                    <a href="https://amazonminingwatch.org/" target="_blank" rel="noopener noreferrer">
+                        Amazon Mining Watch</a>, for example, uses
+                    <a href="https://descarteslabs.com/" target="_blank" rel="noopener noreferrer">
+                        Descartes Labs</a>, a paid cloud computing service to process large amounts of satellite data.
+                </p>
+                <p>
+                    "It's built around in a way that you can break the images into tiles for parallel processing and
+                    that can be ingested directly by the model. So, we don't have to think about that part of the
+                    pipeline," says Edward.
+                </p>
+                <p>
+                    If you work on your personal computer, it's essential to have a solid-state disk (SDD), at least 8
+                    or 16 GB of RAM and a good amount of available storage: a single raw satellite image often weighs
+                    several gigabytes. A powerful processor, a dedicated video card and a good-sized monitor will also
+                    make your work easier.
+                </p>
+
+
+
+                <h4>Verify the results and share your methodology</h4>
+                <p>
+                    <a href="https://onlinejournalismblog.com/2020/10/06/the-7-habits-of-successful-journalists-how-do-you-develop-scepticism/"
+                        target="_blank" rel="noopener noreferrer">
+                        Scepticism</a> is a powerful weapon in journalism. Treat AI predictions like any other data:
+                    don't take them for granted. Like all technology, AI does not work magic or replace traditional
+                    journalism methods. Rather, it complements them.
+                </p>
+                <p>
+                    "It's always this golden rule: 80% of the work was data. Also, a correct interpretation of data,
+                    because we had to find images in big resolution, but no less important was to find some first
+                    examples of the specific patterns of mining," says Anatoly about Texty's investigation into
+                    <a href="https://texty.org.ua/d/2018/amber_eng/" target="_blank" rel="noopener noreferrer">
+                        illegal amber mining in Ukraine</a>.
+                </p>
+                <p>
+                    A good part of your job will be to clean up false positives or understand why there are so many
+                    false negatives to improve your model. If you are working on a story about change, for example, also
+                    pay attention to what didn't change and ask yourself why.
+                </p>
+                <p>
+                    It is important to get some ground truth to check the results of your model: field data obtained
+                    directly in the area you are analysing. What looks like a crop field in the satellite image is
+                    really a crop field?
+                </p>
+                <p>
+                    That doesn't mean you have to travel: you can contact local experts to help you evaluate your
+                    findings.
+                </p>
+                <p>
+                    When you publish, share the methodology you have used, either in the piece itself or on an external
+                    site such as GitHub. It's a good transparency practice, allows understanding your analysis process
+                    and helps others interested in working on the same topic.
+                </p>
+                <p>
+                    But also think about the audience, who don't necessarily know how AI works, and explain its scope
+                    and limitations.
+                </p>
+                <p>
+                    "Journalists need to be transparent and explain not only about the metadata, but also explain what
+                    AI is, what computer vision is, and how we approach that. And make clear the limitations [of the
+                    model]," says Mathias.
+                </p>
+                <p>
+                    Always make explicit the gaps in your research, the things that are unverified and the levels of
+                    uncertainty in your model. Putting on record what you couldn't solve doesn't diminish your work; on
+                    the contrary, it makes it more reliable.
+                </p>
+
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-center text-white one-padding-bottom">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/facostarainis"
+                    target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.linkedin.com/in/federico-acosta-rainis/" target="_blank" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/facostarainis/"
+                    target="_blank" role="button"><i class="fab fa-github"></i></a>
+
+                <!-- Portfolio -->
+                <p class="card-text" style="padding-top: 1%;"><small class="text-muted">
+                        Portfolio:
+                        <a class="text-white" href="https://facostarainis.github.io"
+                            target="_blank">facostarainis.github.io</a>
+                    </small></p>
+
+                <!-- Contact me -->
+                <p class="card-text"><small class="text-muted">
+                        Any questions or comments? I would love to hear from you! Feel free to contact me on Twitter
+                    </small></p>
+
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>

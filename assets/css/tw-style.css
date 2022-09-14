@@ -11,7 +11,7 @@ body, html {
 /* TEXT STYLES */
 
 body, html {
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #333;
@@ -35,7 +35,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.0rem;   
+  font-size: 2.0rem;
   font-weight: bold;
   margin-top: 70px;
 }
@@ -56,14 +56,16 @@ li {
 }
 
 blockquote.pull-quote {
-  font-size: 1.8rem;              
+  font-size: 1.8rem;
   font-weight: 800;
   color: orange;
-  /* margin: 70px -80px; */
 }
 
 a {
-  color: #333;
+  /* color: #333 */
+  color: #3f66ed;
+  /* text-decoration: none; */
+  
 }
 
 figcaption {
@@ -71,18 +73,9 @@ figcaption {
   padding-top: 5px;
 }
 
-footer p{
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin-top: 5px;
-  margin-bottom: 12px;
-}
-
 mark {
-  background-color: #fbc531;
+  background-color: lightyellow;
 }
-
-
 
 /* LAYOUT */
 
@@ -164,8 +157,34 @@ div.bordered p {
 }
 
 .step a {
-  color: rgb(108, 108, 108);
-  text-decoration: none;
+  color: #b3cfff;
+  /* text-decoration: none; */
+}
+
+.add-marginb{
+  margin-bottom: 5%;
+}
+
+.one-padding-bottom{
+  padding-bottom: 1%;
+}
+
+#methodology{
+  background-color: black;
+}
+
+#methodology p {
+  font-size: 14px;
+  color: #fff;
+}
+
+#methodology h4 {
+  padding-bottom: 2%;
+  color: #fff;
+}
+
+#methodology a {
+  color: #b3cfff;
 }
 
 /* CONTENT SECTION */
@@ -293,7 +312,7 @@ figure.image img {
     margin-left: -50vw;
     margin-right: -50vw;
   }
-  
+
   figure.image img {
     max-width: 100%;
   }
